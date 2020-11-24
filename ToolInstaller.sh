@@ -8,31 +8,35 @@ figlet -f mono12 "ToolInstaller" | lolcat
 
 echo "[•]Isso pode demorar alguns minutos" | lolcat
 
-pkg upgrade && pkg update 
+pkg upgrade -y && pkg update -y 
 
-pkg install curl 
+pkg install curl -y
 
-pkg install wget
+pkg install wget -y
 
-pkg install lolcat
+pkg install lolcat -y
 
-pkg install python
+pkg install cowsay -y
 
-pkg install python2
+pkg install unstable-repo -y
 
-pkg install python3
+pkg install python -y
 
-pkg install pip
+pkg install python2 -y
 
-pkg install pip2
+pkg install python3 -y
 
-pkg install irssi
+pkg install pip -y
 
-pkg install php
+pkg install pip2 -y
 
-pkg install git
+pkg install irssi -y
 
-pkg install openssh
+pkg install php -y
+
+pkg install git -y
+
+pkg install openssh -y
 
 git clone https://github.com/cyweb/hammer
 
